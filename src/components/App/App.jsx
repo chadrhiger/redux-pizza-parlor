@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
+import FetchMenu from '../FetchMenu';
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
       <header className='App-header'>
         <h1 className='App-title'>Prime Pizza</h1>
       </header>
-  
+      <FetchMenu />
       <img src='images/pizza_photo.png' />
       <p>Pizza is great.</p>
   
