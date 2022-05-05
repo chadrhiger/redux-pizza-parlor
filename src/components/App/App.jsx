@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
+import OrderForm from '../OrderForm/OrderForm';
 import FetchMenu from '../FetchMenu';
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       <FetchMenu />
       <img src='images/pizza_photo.png' />
       <p>Pizza is great.</p>
-  
+      <OrderForm />
     </div>
   );
 }
