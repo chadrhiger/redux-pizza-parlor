@@ -7,10 +7,17 @@ import logger from 'redux-logger';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 // import * as serviceWorker from './serviceWorker';
 
-const reduxStore = createStore(
-    // combineReducers({
-    // }),
-    applyMiddleware(logger)
-  );
+const pizzaList = (state = [], action) => {
+             
+}
 
-ReactDOM.render(<Provider store={reduxStore}><App /></Provider>, document.getElementById('root'));
+const reduxStore = createStore(
+  // combineReducers({
+  // }),
+  applyMiddleware(logger)
+);
+
+ReactDOM.render(
+  <Provider store={reduxStore}>
+    <App /></Provider>, document.getElementById('root'));
+
