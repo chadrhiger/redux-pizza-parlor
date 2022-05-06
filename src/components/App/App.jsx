@@ -3,7 +3,7 @@ import axios from 'axios';
 import './App.css';
 import OrderForm from '../OrderForm/OrderForm';
 import FetchMenu from '../FetchMenu';
-import Checkout from '../Checkout/Checkout';
+import CheckoutOrder from '../CheckoutOrder/CheckoutOrder';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <img src='images/pizza_photo.png' />
       <p>Pizza is great.</p>
       <OrderForm />
-      <Checkout />
+      <CheckoutOrder />
     </div>
   );
 }

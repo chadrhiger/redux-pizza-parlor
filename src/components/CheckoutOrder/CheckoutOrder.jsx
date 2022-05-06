@@ -1,4 +1,4 @@
-function Checkout() {
+function CheckoutOrder() {
   return (
     <div>
       <h1>Step 3: Checkout</h1>
@@ -22,4 +22,4 @@ function Checkout() {
   );
 }
 
-export default Checkout;
+export default CheckoutOrder;
