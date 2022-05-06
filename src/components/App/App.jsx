@@ -3,9 +3,10 @@ import axios from 'axios';
 import './App.css';
 import OrderForm from '../OrderForm/OrderForm';
 import FetchMenu from '../FetchMenu';
+import CheckoutOrder from '../CheckoutOrder/CheckoutOrder';
+
 
 function App() {
-
   return (
     <div className='App'>
       <header className='App-header'>
@@ -15,6 +16,7 @@ function App() {
       <img src='images/pizza_photo.png' />
       <p>Pizza is great.</p>
       <OrderForm />
+      <CheckoutOrder />
     </div>
   );
 }
