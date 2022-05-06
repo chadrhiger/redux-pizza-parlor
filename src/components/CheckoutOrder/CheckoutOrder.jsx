@@ -20,6 +20,8 @@ function CheckoutOrder() {
           </tr>
         </tbody>
       </table>
+      <h2>Total: $100</h2>
+      <button>CHECKOUT</button>
     </div>
   );
 }
