@@ -8,8 +8,10 @@ function CheckoutOrder() {
       </div>
       <table>
         <thead>
-          <th>Name</th>
-          <th>Cost</th>
+          <tr>
+            <th>Name</th>
+            <th>Cost</th>
+          </tr>
         </thead>
         <tbody>
           <tr>
@@ -18,6 +20,8 @@ function CheckoutOrder() {
           </tr>
         </tbody>
       </table>
+      <h2>Total: $100</h2>
+      <button>CHECKOUT</button>
     </div>
   );
 }
