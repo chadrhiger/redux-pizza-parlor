@@ -8,12 +8,16 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 // import * as serviceWorker from './serviceWorker';
 
 const pizzaList = (state = [], action) => {
-             
+  if(action.type === 'SET_PIZZA'){
+      return action.payload
+  }
+  return state;
 }
 
 const reduxStore = createStore(
-  // combineReducers({
-  // }),
+  combineReducers({
+    pizzaList
+  }),
   applyMiddleware(logger)
 );
 

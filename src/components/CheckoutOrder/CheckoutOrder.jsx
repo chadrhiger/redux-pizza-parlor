@@ -9,8 +9,8 @@ function CheckoutOrder() {
       <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Cost</th>
+          <th>Name</th>
+          <th>Cost</th>
           </tr>
         </thead>
         <tbody>

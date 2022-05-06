@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 
 
@@ -9,6 +9,9 @@ function FetchMenu() {
   }, []);
 
   const dispatch = useDispatch();
+
+  const pizzaList = useSelector((store) => store.pizzaList);
+
 
   function getMenu() {
     axios({
@@ -27,7 +30,34 @@ function FetchMenu() {
         console.error('GET /pizza failed', err)
       });
   }
-  return (<p>to sender</p>);
+  return (
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Image</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          {pizzaList.map((pizza) => {
+            return (
+              <tr>
+                <td>{pizza.name}</td>
+                <td>{pizza.description}</td>
+                <td>{pizza.price}</td>
+                <td><img src={pizza.image_path}></img></td>
+
+              </tr>
+
+            );
+          })}
+        </tbody>
+      </table>
+    </div>)
 }
 
 export default FetchMenu;
